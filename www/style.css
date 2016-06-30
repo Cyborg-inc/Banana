@@ -1,0 +1,108 @@
+<style>
+                #symbol{
+                  width: 40px;
+                  height: 40px;
+                }
+                #Irish{
+                  width: 60px;
+                  height: 40px
+                }
+                h2{
+                  font-family: "codropsicons",Trebuchet MS;
+                  text-align: center;
+                  margin: 35px;
+                  color: #107896;
+                
+                }
+                h4{
+                  font-family: "codropsicons",Trebuchet MS;
+                  text-align: center;
+                  margin: 35px;
+                  color: #107896
+                }
+                h5{
+                  font-family: "codropsicons",Trebuchet MS;
+                  font-size: 17.5px;
+                  color: #107896
+                }
+                
+                .list ;{
+                  font-family: "codropsicons",Trebuchet MS;
+                  color: #107896;
+                }
+                .title{
+                  text-align: center;
+                  font-size: 40px;
+                  margin: 20px;
+                  color: #107896;
+                }
+                .item{
+                  font-family: "codropsicons",Trebuchet MS;
+                  font-size: 20px;
+                
+                  margin: 5px ;
+                
+                }
+                p{
+                  font-family: "codropsicons",Trebuchet MS;
+                  margin: 20px;
+                  color: #107896;
+                  font-size: 15.5px
+                  weight: 200px;
+                }
+                }
+                a{
+                  font-family: "codropsicons",Trebuchet MS;
+                  font-size: 2rem;
+                  color: #107896;
+                
+                }
+                li{
+                  margin: 10px;
+                  font-size: 20px;
+                  font-family: "codropsicons"Trebuchet MS;
+                  color: #107896 
+                }
+                h3{
+                  text-align: center;
+                  font-family: "codropsicons"Trebuchet MS;
+                  color: #107896
+                }
+                h6{
+                  font-size: 500px;
+                  color: #107896
+                }
+                b{
+                  font-size: 15px;
+                  color: #107896
+                }
+                .poker{
+                  font-size: 200px;
+                }
+                .ion-home{
+                  size: 1rem;
+                }
+                .item-divider{
+                  margin: 0px;
+                }
+                .indent{
+                  font-family: "codropsicons"Trebuchet MS;
+                  margin: 13px
+                }
+                .big_indent{
+                  font-size: 13px
+                }
+                #divide{
+                  text-align: center;
+                }
+                #hands{
+                  font-size: 25px;
+                }
+                #slant{
+                  border-radius: 50%;
+                  width: 100%;
+                  height: 100%;
+                }
+                .Move{
+border-radius: 5px;
+}
