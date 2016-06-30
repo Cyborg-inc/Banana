@@ -1,6 +1,15 @@
 angular.module('app.controllers', [])
   
-.controller('homeCtrl', function($scope) {
+.controller('homeCtrl', function(
+	$scope,
+	gamesManager
+) {
+
+	var vm = this;
+
+	// Get the game data from our gamesManager service and
+	// make it available to our view
+	vm.gameData = gamesManager.gameData;
 
 })
    
@@ -9,7 +18,26 @@ angular.module('app.controllers', [])
 
 })
       
-.controller('spitCtrl', function($scope) {
+.controller('spitCtrl', function(
+	$scope,
+	gamesManager
+) {
+
+	var vm = this,
+		currentGameName = 'spit'; // The name of the current game
+
+	// Make toggle method available to view model
+	vm.toggleFavourite = toggleFavourite;
+	// Get the data of the current game from the gameData service
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	// The toggle method
+	function toggleFavourite() {
+
+		// Call the service to toggle the data
+		gamesManager.toggleGameFavourite(currentGameName);
+
+	}
 
 })
    

@@ -1,6 +1,11 @@
 <ion-view title="Spit" id="page6" class=" ">
-    <ion-content padding="true" style="background: url(img/9bZcxSXiRaWn5cJHxizA_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
-        <div>
+    <ion-content padding="true"
+    			 style="background: url(img/9bZcxSXiRaWn5cJHxizA_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;"
+    			 class="has-header"
+    			 ng-controller="spitCtrl as gameController">
+        <div style="background-color: white;">
+        	<button ng-click="gameController.toggleFavourite()">Favourite</button>
+        	<p>{{ gameController.currentGameData }}</p>
             <h3>What you need</h3>
             <br>
             <ul>
