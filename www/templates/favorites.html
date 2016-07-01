@@ -1,27 +1,42 @@
 <ion-view title="Favorites" id="page22" class=" ">
-    <ion-content padding="true" style="background: url(img/27jsaztDT7SqBKCk9nKj_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true"
+                 style="background: url(img/27jsaztDT7SqBKCk9nKj_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="favoritesCtrl as faves">
         <div>
 
         </div>
         <ion-list id="favorites-list9" class=" ">
-            <ion-item class="item-divider " id="favorites-list-item-divider12">Games About Speed</ion-item>
-            <ion-item id="favorites-list-item32" ui-sref="tabsController.spit" class="  ">Spit</ion-item>
-            <ion-item id="favorites-list-item33" ui-sref="tabsController.irishSnap" class="  ">Irish Snap</ion-item>
-            <ion-item id="favorites-list-item34" ui-sref="tabsController.spoons" class="  ">Spoons</ion-item>
-            <ion-item id="favorites-list-item35" ui-sref="tabsController.egyptianRatscrew" class="  ">Egyptian Ratscrew</ion-item>
-            <ion-item class="item-divider " id="favorites-list-item-divider13">Games About Strategy</ion-item>
-            <ion-item id="favorites-list-item36" class="  ">Bridge</ion-item>
-            <ion-item id="favorites-list-item37" ui-sref="tabsController.goFish" class="  ">Go Fish</ion-item>
-            <ion-item id="favorites-list-item38" ui-sref="tabsController.whist" class="  ">Whist</ion-item>
-            <ion-item id="favorites-list-item39" ui-sref="tabsController.cheat" class="  ">Cheat</ion-item>
-            <ion-item id="favorites-list-item40" ui-sref="tabsController.oldMaid" class="  ">Old Maid</ion-item>
-            <ion-list id="favorites-list8" class=" ">
-                <ion-item class="item-divider " id="favorites-list-item-divider14">Gambling Games</ion-item>
-                <ion-item id="favorites-list-item41" class="  ">Poker</ion-item>
-                <ion-item id="favorites-list-item42" ui-sref="tabsController.blackJack" class="  ">BlackJack</ion-item>
-                <ion-item class="item-divider " id="favorites-list-item-divider15">Games of Luck</ion-item>
-                <ion-item id="favorites-list-item43" ui-sref="tabsController.war" class="  ">war</ion-item>
-            </ion-list>
+            <ion-item ng-if="faves.gameData.spit.isFavourite == 1"  id="favorites-list-item32" ui-sref="tabsController.spit" class="  ">Spit</ion-item>
+            
+            <ion-item ng-if="faves.gameData.irish.isFavourite == 1" id="favorites-list-item33" ui-sref="tabsController.irishSnap" class="  ">Irish Snap</ion-item>
+            
+            <ion-item ng-if="faves.gameData.spoon.isFavourite == 1" id="favorites-list-item34" ui-sref="tabsController.spoons" class="  ">Spoons</ion-item>
+            
+            <ion-item ng-if="faves.gameData.egyptian.isFavourite == 1" id="favorites-list-item35" ui-sref="tabsController.egyptianRatscrew" class="  ">Egyptian Ratscrew</ion-item>
+            
+            <ion-item ng-if="faves.gameData.bridge.isFavourite == 1" id="favorites-list-item36" class="  ">Bridge</ion-item>
+            
+            <ion-item ng-if="faves.gameData.fish.isFavourite == 1" id="favorites-list-item37" ui-sref="tabsController.goFish" class="  ">Go Fish</ion-item>
+            
+            <ion-item ng-if="faves.gameData.whist.isFavourite == 1" id="favorites-list-item38" ui-sref="tabsController.whist" class="  ">Whist</ion-item>
+            
+            <ion-item ng-if="faves.gameData.cheat.isFavourite == 1" id="favorites-list-item39" ui-sref="tabsController.cheat" class="  ">Cheat</ion-item>
+            
+            <ion-item ng-if="faves.gameData.maid.isFavourite == 1" id="favorites-list-item40" ui-sref="tabsController.oldMaid" class="">Old Maid</ion-item>
+            
+            <ion-item ng-if="faves.gameData.blackjack.isFavourite == 1" id="favorites-list-item42" ui-sref="tabsController.blackJack" class="  ">BlackJack</ion-item>
+            
+            <ion-item ng-if="faves.gameData.war.isFavourite == 1" id="favorites-list-item43" ui-sref="tabsController.war" class="  ">war</ion-item>
+            
+            <ion-item ng-if="faves.gameData.ranks.isFavourite ==1" id="poker-list-item29" ui-sref="tabsController.handRanks" class="  ">Hand Rankings</ion-item>
+            
+            <ion-item ng-if="faves.gameData.betting.isFavourite" id="poker-list-item28" ui-sref="tabsController.betting" class="  ">Betting</ion-item>
+            
+            <ion-item ng-if="faves.gameData.texas.isFavourite" id="poker-list-item30" ui-sref="tabsController.texasHoldEm" class="  ">Texas Hold'em</ion-item>
+            
+            <ion-item ng-if="faves.gameData.omaha.isFavourite" id="poker-list-item31" ui-sref="tabsController.omaha" class="  ">Omaha</ion-item>
+
         </ion-list>
     </ion-content>
 </ion-view>

@@ -1,5 +1,8 @@
 <ion-view title="Cheat" id="page13" class=" ">
-    <ion-content padding="true" style="background: url(img/Igf30sjOQEOdv8ADsaPk_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/Igf30sjOQEOdv8ADsaPk_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="cheatCtrl as gameController">
         <div>
            
             <h3>What you need</h3>
@@ -11,29 +14,20 @@
             </ul>
             <br>
             <h3>How to play</h3>
-            <p>Split the deck equally between the players
-                <br>
-                <br>if there a remaining cards place them face down to start the discard pile
-                <br>
-                <br>The player to the left of the dealer starts
-                <br>
-                <br>The player puts down somecards of the same rank (or just one of that rank) and says the number of cards of that rank he has placed down
-                <br>
-                <br>the next player then places down cards one rank above or below the previous player's rank
-                <br>
-                <br>If the player has no cards of that rank they can lie and place down cards claiming them to be of that rank
-                <br>
-                <br>this is repeated with the next player and so on
-                <br>
-                <br>If a player believes that another is playing they can call out "cheat"
-                <br>
-                <br>when someone calls cheat the person who is challenged must turn the cards they just played face up
-                <br>
-                <br>if the challenged player was lying then he must pick up all the cards in the discard pile
-                <br>
-                <br>however if the challanged player was telling the truth the challenger must pick up the cards
-                <br>
-                <br>The winner is the first person to get rid of all their cards</p>
+            <p>Split the deck equally between the players</p>
+                <br><p>if there a remaining cards place them face down to start the discard pile</p>
+                <br><p>The player to the left of the dealer starts</p>
+                <br><p>The player puts down somecards of the same rank (or just one of that rank) and says the number of cards of that rank he has placed down</p>
+                <br><p>the next player then places down cards one rank above or below the previous player's rank</p>
+                <br><p>If the player has no cards of that rank they can lie and place down cards claiming them to be of that rank</p>
+                <br><p>this is repeated with the next player and so on</p>
+                <br><p>If a player believes that another is playing they can call out "cheat"</p>
+                <br><p>when someone calls cheat the person who is challenged must turn the cards they just played face up</p>
+                <br><p>if the challenged player was lying then he must pick up all the cards in the discard pile</p>
+                <br><p>however if the challanged player was telling the truth the challenger must pick up the cards</p>
+                <br><p>The winner is the first person to get rid of all their cards</p>
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

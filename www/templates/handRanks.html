@@ -1,51 +1,54 @@
 <ion-view title="Hand Ranks" id="page19" class=" ">
-    <ion-content padding="true" style="background: url(img/3Z7eRuTaTb6bkx1PBeIm_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/3Z7eRuTaTb6bkx1PBeIm_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="handRanksCtrl as gameController">
         <div>
 
             <p>
                 <font size="4">The hands of poker ranked highest to lowest are:</font>
             </p>
             <ul>
-                <li id="hands">1: Royal Flush
+                <li id="hands">1: Royal Flush</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section.img.png/1386587326930.png">
-                </li>
-                <li id="hands">2: Straight Flush
+
+                <li id="hands">2: Straight Flush</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_0.img.png/1386587330804.png">
-                </li>
-                <li id="hands">3: Four of a Kind
+                
+                <li id="hands">3: Four of a Kind</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_1.img.png/1386587335167.png">
-                </li>
-                <li id="hands">4: Full House
+
+                <li id="hands">4: Full House</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_2.img.png/1386587342036.png">
-                </li>
-                <li id="hands">5: Flush
+
+                <li id="hands">5: Flush</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_3.img.png/1386587346717.png">
-                </li>
-                <li id="hands">6: straight
+
+                <li id="hands">6: straight</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_4.img.png/1386587355577.png">
-                </li>
-                <li id="hands">7: Three of a Kind
+
+                <li id="hands">7: Three of a Kind</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_5.img.png/1386587360417.png">
-                </li>
-                <li id="hands">8: Two Pairs
+
+                <li id="hands">8: Two Pairs</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_6.img.png/1386587365687.png">
-                </li>
-                <li id="hands">9: A Pair
+
+                <li id="hands">9: A Pair</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_7.img.png/1386587388755.png">
-                </li>
-                <li id="hands">10:High Card
+
+                <li id="hands">10:High Card</li>
                     <br>
                     <img id="cards" src="https://www.partypoker.com/content/poker/partypokercom/en_US/how-to-play/hand-rankings/_jcr_content/par/div_2/par/section_8.img.png/1386587393100.png">
-                </li>
+                
             </ul>
             <h5>Royal Flush</h5>
             <p>A Royal flush is an Ace-high straight flush
@@ -76,12 +79,13 @@
 
             <h3>In the event of a tie</h3>
             <p>In the event of a tie where not all 5 cards are used in the hand then the side cards(cards not being used) or "kickers" to decide the winner
-                <br>The winner when using side cards is whoever has the highest valued card as their "kicker"
-                <br>For example, if two players had and indentical hand of two tens and two fives but one player had a six and the other player had a four then the player with the six would win
-                <br>If the players have and equal first kicker then a second,third or fourth kicker may come into play (it depends on what hand their is a tie on
-                <br>if the when all the kickers are used then the pot is split between the players evenly</p>
+                </p><br><p>The winner when using side cards is whoever has the highest valued card as their "kicker"</p>
+                <br><p>For example, if two players had and indentical hand of two tens and two fives but one player had a six and the other player had a four then the player with the six would win</p>
+                <br><p>If the players have and equal first kicker then a second,third or fourth kicker may come into play (it depends on what hand their is a tie on</p>
+                <br><p>if the when all the kickers are used then the pot is split between the players evenly</p>
 
-
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

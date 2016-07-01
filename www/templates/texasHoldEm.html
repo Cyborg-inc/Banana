@@ -1,5 +1,8 @@
 <ion-view title="Texas Hold'em" id="page20" class=" ">
-    <ion-content padding="true" style="background: url(img/2jsRcpdfQc2V4KM5fABW_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/2jsRcpdfQc2V4KM5fABW_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="texasHoldEmCtrl as gameController">
         <div>
 
             <h3>What you need</h3>
@@ -9,27 +12,21 @@
                 <li>someone to play against</li>
             </ul>
             <h3>How to play</h3>
-            <p>players are dealt two cards face down
-                <br>
-                <br>Each player can now exercise their betting options
-                <br>
-                <br>Three cards are dealt face up on the table for all players to share
-                <b>This known as the flop</b>
-                <br>
-                <br>The players have another round of betting
-                <br>
-                <br>A fourth card is added to the flop
-                <b>this is called the turn</b>
-                <br>
-                <br>another round of betting takes place
-                <br>
-                <br>a fith card is dealt added to the flop
-                <b>this is know as the river</b>
-                <br>
-                <br>a final round of betting takes place
-                <br>
-                <br>when the betting has ended there will be showdown
-                <br>Whoever has the best hand wins the pot</p>
+            <p>players are dealt two cards face down</p>
+                <br><p>Each player can now exercise their betting options</p>
+                <br><p>Three cards are dealt face up on the table for all players to share</p>
+                <b><p>This known as the flop</b></p>
+                <br><p>The players have another round of betting</p>
+                <br><p>A fourth card is added to the flop</p>
+                <b><p>this is called the turn</b></p>
+                <br><p>another round of betting takes place</p>
+                <br><p>a fith card is dealt added to the flop</p>
+                <b><p>this is know as the river</b></p>
+                <br><p>a final round of betting takes place</p>
+                <br><p>when the betting has ended there will be showdown</p>
+                <br><p>Whoever has the best hand wins the pot</p>
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

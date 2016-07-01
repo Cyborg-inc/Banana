@@ -1,5 +1,8 @@
 <ion-view title="Spoons" id="page8" class=" ">
-    <ion-content padding="true" style="background: url(img/sKp060VSRZa5aebK571z_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/sKp060VSRZa5aebK571z_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="spoonsCtrl as gameController">
         <div>
 
             <h3>What you need</h3>
@@ -12,27 +15,20 @@
             </ul>
             <br>
             <h3>How to play</h3>
-            <p>Place the spoons in a circle in the middle of the table
-                <br>
-                <br>From the deck get all four cards of the required ranks (You need a rank for each player)
-                <br>Then deal out these cards so there are four for each player
-                <br>
-                <br>The players try to get four cards of the same rank
-                <br>
-                <br>They do this by sliding one of their cards to the player to their right and taking the card given to them by the player to their left
-                <br>
-                <br>Once a player has all four cards of a rank then they can take a spoon from the center
-                <br>
-                <br>Once one player has taken a spoon all players can take a spoon (regardless of the cards they have)
-                <br>
-                <br>One person won't be able to get a spoon and they will be given a letter
-                <br>
-                <br>Then the cards are reshuffled and the next round starts
-                <br>
-                <br>A player is out when they have spelt out S-P-O-O-N
-                <br>
-                <br>The las player to be out wins
+            <p>Place the spoons in a circle in the middle of the table</p>
+                <br><p>From the deck get all four cards of the required ranks (You need a rank for each player)</p>
+                <br><p>Then deal out these cards so there are four for each player</p>
+                <br><p>The players try to get four cards of the same rank</p>
+                <br><p>They do this by sliding one of their cards to the player to their right and taking the card given to them by the player to their left</p>
+                <br><p>Once a player has all four cards of a rank then they can take a spoon from the center</p>
+                <br><p>Once one player has taken a spoon all players can take a spoon (regardless of the cards they have)</p>
+                <br><p>One person won't be able to get a spoon and they will be given a letter</p>
+                <br><p>Then the cards are reshuffled and the next round starts</p>
+                <br><p>A player is out when they have spelt out S-P-O-O-N</p>
+                <br><p>The last player to be out wins</p>
             </p>
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

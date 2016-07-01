@@ -1,7 +1,9 @@
 <ion-view title="Whist" id="page12" class=" ">
-    <ion-content padding="true" style="background: url(img/mPSlAFXYTPmZFbUy70se_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/mPSlAFXYTPmZFbUy70se_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;"
+                 class="has-header"
+                 ng-controller="whistCtrl as gameController">
         <div>
-
             <h3>What you need</h3>
             <br>
             <ul>
@@ -15,34 +17,25 @@
             <center>
                 <img src="http://www.wsop.com/how-to-play-poker/images/how-to-card-rank.jpg" style="width:350px;height:228px">
             </center>
-            <p>the four players make two fixed partnerships of two
-                <br>
-                <br>partners sit opposite each other
-                <br>
-                <br>A dealer is randomly selected
-                <br>
-                <br>The dealer then deals out the card so everyone has 13 cards
-                <br>
-                <br>The final card (which will belong to the dealer)is turned face up to show which suit is the trump
-                <br>
-                <br>The turned trump will remain face-upon the table until it is the dealer's turn to play the first trick and may play any card
-                <br>
-                <br>the other players play a car to that trick in clockwise order (following the suit if possible)
-                <br>
-                <br>If the player can't follow the suit they may any card to discard or trump
-                <br>
-                <br>The highest card of the suit that was lead wins the trick
-                <br>unless their are trump cards played in whcih case the highest rank in the trump suit wins the trick
-                <br>
-                <br>Play continues until all 13 cards are played then the score is recorded
+            <p>the four players make two fixed partnerships of two</p>
+                <br><p>partners sit opposite each other</p>
+                <br><p>A dealer is randomly selected</p>
+                <br><p>The dealer then deals out the card so everyone has 13 cards</p>
+                <br><p>The final card (which will belong to the dealer)is turned face up to show which suit is the trump</p>
+                <br><p>The turned trump will remain face-upon the table until it is the dealer's turn to play the first trick and may play any card</p>
+                <br><p>the other players play a car to that trick in clockwise order (following the suit if possible)</p>
+                <br><p>If the player can't follow the suit they may any card to discard or trump</p>
+                <br><p>The highest card of the suit that was lead wins the trick</p>
+                <br><p>unless their are trump cards played in whcih case the highest rank in the trump suit wins the trick</p>
+                <br><p>Play continues until all 13 cards are played then the score is recorded</p>
                 <br>
             </p>
             <h3>How scoring works</h3>
-            <p>The side that won more tricks gets one point for each trick in excess of six
-                <br>
-                <br>So if a team has 8 tricks they score 2 points
-                <br>
-                <br>The first team to score 5 points wins</p>
+            <p>The side that won more tricks gets one point for each trick in excess of six</p>
+                <br><p>So if a team has 8 tricks they score 2 points</p>
+                <br><p>The first team to score 5 points wins</p>
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

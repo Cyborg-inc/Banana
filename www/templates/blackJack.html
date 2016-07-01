@@ -1,5 +1,8 @@
 <ion-view title="Black Jack" id="page15" class=" ">
-    <ion-content padding="true" style="background: url(img/gxldt9hMSSiizlsV4pJT_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <ion-content padding="true" 
+                 style="background: url(img/gxldt9hMSSiizlsV4pJT_Playing-Cards-Symbols.jpg) no-repeat center;background-size:cover;" 
+                 class="has-header"
+                 ng-controller="blackJackCtrl as gameController">
         <div>
             
             <h3>What you need</h3>
@@ -12,74 +15,52 @@
             <br>
             <h3>Objective</h3>
             <br>
-            <p>The objective is to get the highest score possible without going over 21
-                <br>
-                <br>The numbered cards are worth the points on the card
-                <br>
-                <br>The royals(Jack,Queen,King) are worth 10
-                <br>
-                <br>The ace is worth either 1 or 11 points depending on what the player wants</p>
+            <p>The objective is to get the highest score possible without going over 21</p>
+                <br><p>The numbered cards are worth the points on the card</p>
+                <br><p>The royals(Jack,Queen,King) are worth 10</p>
+                <br><p>The ace is worth either 1 or 11 points depending on what the player wants</p>
             <br>
             <h3>How to play</h3>
             <p>
-                <b id="important">This assumes you are playing at home</b>
+                <b>This assumes you are playing at home</b>
             </p>
             <br>
             <h4>the dealing</h4>
-            <p>PLayers place their bets before the dealing starts
-                <br>
-                <br>at the begining of the round the players and dealer are dealt two cards
-                <br>
-                <br>The player's cards are normally dealt face up
-                <br>
-                <br>The dealer has one card dealt face-down(this is known as the hole) and one face-up
-                <br>
-                <br>The best possible inital hand to be dealt is an ace and one card worth 10 points
-                <br>
-                <br>This is known as blackjack or 'natural 21'
-                <br>
-                <br>if aplayer gets a blackjack they automatically win unless the dealer also has a blackjack in which case it is a tie
-                <br>
-                <br>If the dealer has a blackjack any players without a blackjack automatically lose</p>
+            <p>PLayers place their bets before the dealing starts</p>
+                <br><p>at the begining of the round the players and dealer are dealt two cards</p>
+                <br><p>The player's cards are normally dealt face up</p>
+                <br><p>The dealer has one card dealt face-down(this is known as the hole) and one face-up</p>
+                <br><p>The best possible inital hand to be dealt is an ace and one card worth 10 points</p>
+                <br><p>This is known as blackjack or 'natural 21'</p>
+                <br><p>if a player gets a blackjack they automatically win unless the dealer also has a blackjack in which case it is a tie</p>
+                <br><p>If the dealer has a blackjack any players without a blackjack automatically lose</p>
             <h4>The player's turn</h4>
             <br>
-            <p>The player first say if he is going to use any of the side rules(explained later)
-                <br>
-                <br>Then the player can keep his hand (stand) or take a card from the deck (hit)
-                <br>
-                <br>The player can hit until he decides to stand or exceeds 21 and loses (goes bust)
-                <br>
+            <p>The player first say if he is going to use any of the side rules(explained later)</p>
+                <br><p>Then the player can keep his hand (stand) or take a card from the deck (hit)</p>
+                <br><p>The player can hit until he decides to stand or exceeds 21 and loses (goes bust)</p>
             </p>
             <h4>The dealer's turn</h4>
             <br>
-            <p>Once all the players have finished their actions the dealer turns over his hidden card
-                <br>
-                <br>If the dealer has a blackjack then all the palyers lose (unless they also have a blckjack)
-                <br>
-                <br>If the dealer doesn't have a blackjack then they either hit or stand
-                <br>
-                <br>However the dealer hits and stands based on rules:
-                <br>
-                <br>if he has less than 17 he must hit and if has more he must stand
-                <br>
-                <br>When at home change the dealer after every hand to keep it fair or have someone whois the appointed daler the whole night</p>
+            <p>Once all the players have finished their actions the dealer turns over his hidden card</p>
+                <br><p>If the dealer has a blackjack then all the palyers lose (unless they also have a blckjack)</p>
+                <br><p>If the dealer doesn't have a blackjack then they either hit or stand</p>
+                <br><p>However the dealer hits and stands based on rules:</p>
+                <br><p>if he has less than 17 he must hit and if has more he must stand</p>
+                <br><p>When at home change the dealer after every hand to keep it fair or have someone whois the appointed daler the whole night</p>
             <h4>The side rules</h4>
             <h5>Insurance</h5>
-            <p>When a dealer's face-up card is an ace the players have the choice to bet on wether the dealer has a blackjack or not
-                <br>
-                <br>The insurance bet is equivalent to the bet placed and is payed back at odds of 2:1 if the dealer does have a blackjack whilst the origninal bet will be lost.
-                <b>so the player basically breaks even</b>
+            <p>When a dealer's face-up card is an ace the players have the choice to bet on wether the dealer has a blackjack or not</p>
+                <br><p>The insurance bet is equivalent to the bet placed and is payed back at odds of 2:1 if the dealer does have a blackjack whilst the origninal bet will be lost.</p>
+                <p><b>so the player basically breaks even</b></p>
             </p>
             <h5>surrender</h5>
             <p>If the player has a bad hand in comparison to the dealer(based on what they can see) they can give up their hand and reclaim half of their bet</p>
             <h5>Splitting</h5>
-            <p>If a player gets two starting cards of the same score then he can split into two hands
-                <br>
-                <br>the player puts another bet on the new hand that is the same size as the bet on the original hand
-                <br>
-                <br>the dealer will then deal a second card to each of the new cards
-                <br>
-                <br>The player then treats the two hands seperately so can go bust or stand and then do the same on the second hand</p>
+            <p>If a player gets two starting cards of the same score then he can split into two hands</p>
+                <br><p>the player puts another bet on the new hand that is the same size as the bet on the original hand</p>
+                <br><p>the dealer will then deal a second card to each of the new cards</p>
+                <br><p>The player then treats the two hands seperately so can go bust or stand and then do the same on the second hand</p>
             <h5>Double down</h5>
             <p>If th player is confident their the hand will beat the dearler's hand you may double your original bet</p>
             <h3>Betting</h3>
@@ -91,6 +72,8 @@
                 <li>BlackJack (The player wins 1.5 times their bet and keeps his own money)</li>
                 <li>Tie (The player gets back the money they bet)</li>
             </ul>
+            <center><button class="button button-calm icon-left ion-ios-star-outline" ng-if="gameController.currentGameData.isFavourite == 0" ng-click="gameController.toggleFavourite()">Favourite</button></center>
+            <center><button class="button button-energized icon-left ion-ios-star" ng-if="gameController.currentGameData.isFavourite == 1" ng-click="gameController.toggleFavourite()">Favourite</button></center>
         </div>
     </ion-content>
 </ion-view>

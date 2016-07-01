@@ -11,30 +11,33 @@
                   font-family: "codropsicons",Trebuchet MS;
                   text-align: center;
                   margin: 35px;
-                  color: #107896;
+                  color: black;
                 
                 }
                 h4{
                   font-family: "codropsicons",Trebuchet MS;
                   text-align: center;
                   margin: 35px;
-                  color: #107896
+                  color: black;
+                  background-color: yellow;
                 }
                 h5{
                   font-family: "codropsicons",Trebuchet MS;
                   font-size: 17.5px;
-                  color: #107896
+                  color: black;
+                  background-color: yellow;
                 }
                 
                 .list ;{
                   font-family: "codropsicons",Trebuchet MS;
-                  color: #107896;
+                  color: yellow;
                 }
                 .title{
                   text-align: center;
                   font-size: 40px;
                   margin: 20px;
-                  color: #107896;
+                  color: black;
+
                 }
                 .item{
                   font-family: "codropsicons",Trebuchet MS;
@@ -46,35 +49,39 @@
                 p{
                   font-family: "codropsicons",Trebuchet MS;
                   margin: 20px;
-                  color: #107896;
+                  color: black;
                   font-size: 15.5px
                   weight: 200px;
+                  background-color: yellow 
                 }
                 }
                 a{
                   font-family: "codropsicons",Trebuchet MS;
                   font-size: 2rem;
-                  color: #107896;
+                  color: black;
                 
                 }
                 li{
-                  margin: 10px;
+                  margin: 20px;
                   font-size: 20px;
                   font-family: "codropsicons"Trebuchet MS;
-                  color: #107896 
+                  color: black;
+                  background-color: yellow
                 }
                 h3{
                   text-align: center;
                   font-family: "codropsicons"Trebuchet MS;
-                  color: #107896
+                  color: black;
+                  margin: 20px;
+                  background-color: yellow;
                 }
                 h6{
                   font-size: 500px;
-                  color: #107896
+                  color: yellow
                 }
                 b{
                   font-size: 15px;
-                  color: #107896
+                  color: black
                 }
                 .poker{
                   font-size: 200px;

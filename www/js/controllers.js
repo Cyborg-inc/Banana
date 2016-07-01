@@ -13,8 +13,14 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('favoritesCtrl', function($scope) {
+.controller('favoritesCtrl', function(
+	$scope,
+	gamesManager
+) {
 
+	var vm = this;
+
+	vm.gameData = gamesManager.gameData;
 
 })
       
@@ -41,43 +47,174 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('irishSnapCtrl', function($scope) {
+.controller('irishSnapCtrl', function(
+	$scope,
+	gamesManager
+) {
+
+	var vm =this,
+		currentGameName ='irish';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite() {
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('spoonsCtrl', function($scope) {
+.controller('spoonsCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm =this,
+		currentGameName ='spoon';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('egyptianRatscrewCtrl', function($scope) {
+.controller('egyptianRatscrewCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='egyptian';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('bridgeCtrl', function($scope) {
+.controller('bridgeCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='bridge';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('goFishCtrl', function($scope) {
+.controller('goFishCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='fish';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('whistCtrl', function($scope) {
+.controller('whistCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='whist';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('cheatCtrl', function($scope) {
+.controller('cheatCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='cheat';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('oldMaidCtrl', function($scope) {
+.controller('oldMaidCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='maid';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('blackJackCtrl', function($scope) {
+.controller('blackJackCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='blackjack';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('warCtrl', function($scope) {
+.controller('warCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='war';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
@@ -85,19 +222,71 @@ angular.module('app.controllers', [])
 
 })
    
-.controller('bettingCtrl', function($scope) {
+.controller('bettingCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='betting';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('handRanksCtrl', function($scope) {
+.controller('handRanksCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='ranks';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('texasHoldEmCtrl', function($scope) {
+.controller('texasHoldEmCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='texas';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
    
-.controller('omahaCtrl', function($scope) {
+.controller('omahaCtrl', function(
+	$scope,
+	gamesManager
+) {
+	var vm = this,
+		currentGameName ='omaha';
+
+	vm.toggleFavourite = toggleFavourite;
+
+	vm.currentGameData = gamesManager.gameData[currentGameName];
+
+	function toggleFavourite(){
+		gamesManager.toggleGameFavourite(currentGameName)
+	}
 
 })
  
